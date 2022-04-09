@@ -1,4 +1,4 @@
-const meuModulo = require('./meu-modulo');
+const meuModulo = require('../../meu-modulo');
 
 const soma = meuModulo.soma;
 
