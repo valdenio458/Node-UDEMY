@@ -16,6 +16,10 @@ app.use(express.json())
 
 const PORT = 3000;
 
+//* arquivos estáticos:
+app.use(express.static(__dirname + '/public'));
+
+
 const basePath = path.join(__dirname, 'templates');
 
 app.use('/users', router)
