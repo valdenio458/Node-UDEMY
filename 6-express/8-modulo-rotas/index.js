@@ -1,6 +1,6 @@
 import express, { application } from 'express';
 import path from 'path';
-import users from './users/index.js';
+import routes from './routes/user.js';
 const __dirname = path.resolve();
 
 const app = express();
@@ -18,7 +18,7 @@ const PORT = 3000;
 
 const basePath = path.join(__dirname, 'templates');
 
-app.use('/users', users)
+app.use('/users', routes)
 
 app.get('/', (_req, res) => {
 
