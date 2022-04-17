@@ -12,12 +12,9 @@ router.get('/', (req, res) => {
 router.get('/new', (req, res) => {
     res.sendFile(`${basePath}/new.html`);
     });
-    
+
 router.get('/:id', (req, res) => {
   res.sendFile(`${basePath}/project.html`);
 });
-
-    
-
 
 export default router   
