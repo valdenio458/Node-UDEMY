@@ -10,7 +10,7 @@ router.get('/', (_req, res) => {
 });
 
 router.get('/new', (_req, res) => {
-    res.sendFile(`${basePath}/new.html`);
+  res.sendFile(`${basePath}/new.html`);
     });
 
 router.get('/:id', (_req, res) => {
