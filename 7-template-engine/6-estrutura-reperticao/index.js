@@ -11,10 +11,10 @@ app.set('view engine', 'handlebars');
 
 app.get('/dashboard', (_req, res) => {
 
-    const items = [ "Item 1", "Item 2", "Item 3" ];
+    const frutas = [ 'Banana', 'Maçã', 'Melancia' ];
 
 
-  res.render('dashboard', { items });
+  res.render('dashboard', { frutas });
 });
 
 app.get('/', (_req, res) => {
