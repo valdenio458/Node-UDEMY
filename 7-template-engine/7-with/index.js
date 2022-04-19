@@ -11,10 +11,20 @@ app.set('view engine', 'handlebars');
 
 app.get('/dashboard', (_req, res) => {
 
-    const items = [ "Item 1", "Item 2", "Item 3" ];
+    const frutas = [ 'Banana', 'Maçã', 'Melancia' ];
 
 
-  res.render('dashboard', { items });
+  res.render('dashboard', { frutas });
+});
+
+app.get('/post', (_req, res) => {
+   const post = {
+        titulo: 'Título do post',
+        conteudo: 'Conteúdo do post',
+        autor: 'Autor do post',
+        data: '01/01/2020'
+   }
+   res.render('blogpost', { post })
 });
 
 app.get('/', (_req, res) => {
