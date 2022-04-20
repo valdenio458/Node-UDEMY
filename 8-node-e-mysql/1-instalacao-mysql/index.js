@@ -1,14 +1,19 @@
 import express from 'express';
+import exphbs from 'express-handlebars';
 import mysql from 'mysql';
 
 const app = express();
+
+//* Setup do handlebars:
+app.engine('handlebars', exphbs.engine())
+app.set('view engine', 'handlebars');
 
 const PORT = 3000;
 
 app.use(express.static('public'));
 
 app.get('/', (_req, res) => {
-  res.sendFile(__dirname + '/views/index.html');
+  res.sendFile('home');
   });
 
 const conn = mysql.createConnection({
@@ -23,7 +28,7 @@ conn.connect((err) => {
     console.log(err);
     return;
   }
-  console.log('Connected!');
+  console.log('Connected to MySql!');
 }),
 
 app.listen(PORT, () => {
