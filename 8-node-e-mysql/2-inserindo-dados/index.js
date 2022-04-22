@@ -25,8 +25,7 @@ app.get('/', (_req, res) => {
   });
 
 app.post('/books/insertbook', (req, res) => {
-  const { title, author} = req.body;
-  console.log('Xablau');
+  const { title, author} = req.body; 
 
   const QUERY = `INSERT INTO books (title, author) VALUES ('${title}', '${author}')`;
 
