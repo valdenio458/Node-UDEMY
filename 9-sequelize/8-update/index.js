@@ -87,6 +87,7 @@ app.get('/',async (_req, res) => {
   
   conn
   .sync()
+  //* sync({force: true}) para forçar a criação do banco de dados
   .then(() => {  //* Cria a tabela User
     app.listen(PORT)      
     })
