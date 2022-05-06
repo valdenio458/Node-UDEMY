@@ -10,7 +10,7 @@ const app = express();
 
 const PORT = 3009;
 
-//* Setup do handlebars:
+//* Setup do handlebars
 app.engine('handlebars', exphbs.engine())
 app.set('view engine', 'handlebars');
 
