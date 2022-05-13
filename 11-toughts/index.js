@@ -3,9 +3,13 @@ import exphbs from 'express-handlebars';
 import session from 'express-session';
 import FileStore from 'session-file-store';
 import flash from 'express-flash';
-import conn from './db/conn.js';
+
+import Tought from './models/Tought.js';
+import User from './models/User.js';
 
 const app = express();
+
+import conn from './db/conn.js';
 
 const PORT = 3009;
 
