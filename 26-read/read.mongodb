@@ -14,3 +14,5 @@ db.create.find({age:{$gt:25}})
 db.create.find({age:{$lt:30}})
 
 db.create.find({ $or: [{age: {$gt:25}, work: true}]})
+
+db.create.find({age:{$lt:30}}).count()
