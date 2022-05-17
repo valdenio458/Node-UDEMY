@@ -5,4 +5,6 @@ show collections;
 
 db.create.find();
 
+db.create.find({age: 30})
+
 db.create.find({name: {$in:["Raphaela", "Camila"]}});
