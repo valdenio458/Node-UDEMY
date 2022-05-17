@@ -18,3 +18,19 @@ db.create.insertOne({
   name: 'Maria',
   age: 25,
 })
+
+db.create.insertMany([  
+  {
+    name: 'Raphaela',
+    age: 30,
+  },
+  {
+    name: 'Camila',
+    age: 25,
+  },
+])
+
+db.create.insertOne({
+  _id: 25,
+  name: 'Simone',
+})
