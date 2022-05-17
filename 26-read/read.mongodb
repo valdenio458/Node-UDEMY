@@ -10,3 +10,5 @@ db.create.find({age: 30})
 db.create.find({name: {$in:["Raphaela", "Camila"]}});
 
 db.create.find({age:{$gt:25}})
+
+db.create.find({age:{$lt:30}})
