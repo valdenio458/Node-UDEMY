@@ -1,0 +1,8 @@
+show dbs
+use booksData;
+
+show collections;
+
+db.create.find();
+
+db.create.find({name: {$in:["Raphaela", "Camila"]}});
