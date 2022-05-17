@@ -8,3 +8,9 @@ db.create.find();
 db.create.find({age: 30})
 
 db.create.find({name: {$in:["Raphaela", "Camila"]}});
+
+db.create.find({age:{$gt:25}})
+
+db.create.find({age:{$lt:30}})
+
+db.create.find({ $or: [{age: {$gt:25}, work: true}]})
