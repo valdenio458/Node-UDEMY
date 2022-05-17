@@ -1,0 +1,20 @@
+use crud
+
+db.create.insertOne({
+    name: "John",
+    age: 30,
+    work: true,
+    hobiies: [
+        "programming",
+        "reading",
+        "swimming"
+    ]
+
+})
+
+db.create.find()
+
+db.create.insertOne({
+  name: 'Maria',
+  age: 25,
+})
