@@ -30,4 +30,7 @@ db.create.insertMany([
   },
 ])
 
-show Collections
+db.create.insertOne({
+  _id: 25,
+  name: 'Simone',
+})
