@@ -1,0 +1,28 @@
+show dbs
+use booksData;
+
+show collections;
+
+db.create.find();
+
+db.create.find({age: 30})
+
+db.create.find({name: {$in:["Raphaela", "Camila"]}});
+
+db.create.find({age:{$gt:25}})
+
+db.create.find({age:{$lt:30}})
+
+db.create.find({ $or: [{age: {$gt:25}, work: true}]})
+
+db.create.find({age:{$lt:30}}).count()
+
+db.create.updateOne({name: "John"}, {$set: {age: 32}})
+
+db.create.updateMany({name: "John"}, {$set: {address: "New York"}})
+
+db.create.replaceOne({name: "Maria"}, {nova: "indefinida"})
+
+db.create.updateOne({name: "John"}, {$push: {hobiies: "playguitar"}})
+
+db.create.deleteOne({nova:"indefinida" })
