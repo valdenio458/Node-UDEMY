@@ -1,3 +1,57 @@
 h1 {
   color: red;
 }
+
+p {
+  color: blue;
+}
+
+h2 {
+  color: green;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Este é um comentário */
+
+/* Classes e ids */
+
+.p-texto {
+  color: green;
+}
+
+#titulo-app {
+  color: purple;
+  font-size: 40px;
+}
+
+/* Cores */
+.nome {
+ color: orange
+}
+
+.hexa {
+ color: #6a40c4
+}
+
+.rgba {
+  color: rgba(17, 197, 214, 1)
+}
+
+/* Backgrounds */
+.div-background {
+  background-image: url('img/por-do-sol.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100px 100px ;
+  height: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.titulo-background {
+  background-color: #000;  
+  text-align: center;
+  color: #fff;
+}
