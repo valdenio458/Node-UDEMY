@@ -37,3 +37,21 @@ h2 {
 .rgba {
   color: rgba(17, 197, 214, 1)
 }
+
+/* Backgrounds */
+.div-background {
+  background-image: url('img/por-do-sol.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100px 100px ;
+  height: 300px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.titulo-background {
+  background-color: #000;  
+  text-align: center;
+  color: #fff;
+}
