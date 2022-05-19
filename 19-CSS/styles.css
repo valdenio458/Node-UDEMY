@@ -13,3 +13,14 @@ h2 {
 }
 
 /* Este é um comentário */
+
+/* Classes e ids */
+
+.p-texto {
+  color: green;
+}
+
+#titulo-app {
+  color: purple;
+  font-size: 40px;
+}
