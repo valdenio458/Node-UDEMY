@@ -55,3 +55,41 @@ h1 {
   text-align: center;
   color: #fff;
 }
+
+/* Fontes */
+.family {
+  color: #000;
+  font-size:40px;
+ }
+
+.family.serif {
+  color: green;
+}
+
+.serif {
+  font-family: "times new roman";  
+}
+
+.sans-serif {
+  font-family: "arial";
+}
+
+.monospace {
+  font-family: "courier new";
+} 
+
+.italic {
+  font-style: italic;
+}
+
+.oblique {
+  font-style: oblique;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.variant {
+  font-variant: small-caps;
+}
