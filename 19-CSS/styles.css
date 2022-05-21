@@ -94,6 +94,11 @@ h1 {
   font-variant: small-caps;
 }
 
+/* Box Model */
+body {
+  margin: 0;
+}
+
 .boxmodel {
   width:200px;
   height:200px;
