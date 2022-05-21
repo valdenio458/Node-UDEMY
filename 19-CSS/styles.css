@@ -94,6 +94,11 @@ h1 {
   font-variant: small-caps;
 }
 
+/* Box Model */
+body {
+  margin: 0;
+}
+
 .boxmodel {
   width:200px;
   height:200px;
@@ -101,6 +106,7 @@ h1 {
   padding: 30px 20px;
   border: 3px solid #000;
   border-radius: 10px;
+  margin: 100px;
 }
 
 .paragrafo-box {
