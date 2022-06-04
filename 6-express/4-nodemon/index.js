@@ -14,6 +14,3 @@ res.sendFile(`${basePath}/index.html`)
 
 });
 
-app.listen(PORT, () => {
-  console.log(`Aplicação rodando na porta: ${PORT}`);
-});
